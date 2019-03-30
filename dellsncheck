@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+请输入Dell服务标签:<br>
+<input type="text" id="name">
+<br><br>
+<input type="submit" value="查询保修信息" id="submit">
+<input type="submit" value="查询配置信息" id="submit2">
+
+</form> 
+
+</body>
+</html>
+
+<script language="javascript" type="text/javascript">
+var submit=document.getElementById("submit");
+
+submit.onclick=function(){
+var name = document.getElementById("name").value;
+
+window.location.href="https://dell.com/support/home/cn/zh/cndhs1/product-support/servicetag/"+name+"/warranty";
+}
+
+</script>
+
+<script language="javascript" type="text/javascript">
+var submit=document.getElementById("submit2");
+
+submit2.onclick=function(){
+var name = document.getElementById("name").value;
+
+window.location.href="https://dell.com/support/home/cn/zh/cndhs1/product-support/servicetag/"+name+"/configuration";
+}
+
+</script>
+
